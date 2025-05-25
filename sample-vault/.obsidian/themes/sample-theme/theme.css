@@ -1,0 +1,67 @@
+.theme-dark {
+  --dark: #262626;
+  --background-primary: #1e1e2e;
+  --background-secondary: #11111b;
+  --red: #f38ba8;
+  --yellow: #f9e2af;
+  --blue: #89b4fa;
+  --sapphire: #74c7ec;
+  --green: #a6e3a1;
+  --pink: #f5c2e7;
+  --orange: #fab387;
+  --lavender: #b4befe;
+  --mauve: #cba6f7;
+  --text-normal: #cdd6f4;
+  --text-muted: #6c7086;
+  --code-background: #262626;
+}
+
+.theme-light {
+  --dark: #262626;
+  --background-primary: #eff1f5;
+  --background-secondary: #dce0e8;
+  --red: #d20f39;
+  --yellow: #df8e1d;
+  --blue: #1e66f5;
+  --sapphire: #209fb5;
+  --green: #40a02b;
+  --pink: #ea76cb;
+  --orange: #fe640b;
+  --lavender: #7287fd;
+  --mauve: #ea76cb;
+  --text-normal: #4c4f69;
+  --text-muted: #9ca0b0;
+  --code-background: rgb(43.8784530387, 45.6104972376, 60.6215469613) ;
+}
+
+.theme-light, .theme-dark {
+  --code-normal: var(--orange);
+  --code-comment: var(--text-muted);
+  --code-function: var(--yellow);
+  --code-important: var(--pink);
+  --code-keyword: var(--mauve);
+  --code-operator: var(--orange);
+  --code-property: var(--sapphire);
+  --code-punctuation: var(--orange);
+  --code-string: var(--green);
+  --code-tag: var(--green);
+  --code-value: var(--red);
+  --italic-color: var(--mauve);
+  --bold-color: var(--mauve);
+  --bold-modifier: 300;
+}
+
+/*
+  ____ ____ ___  ____    _  _ _ ____ ____  
+ |    |  | |  \ |___    |\/| | [__  |     
+ |___ |__| |__/ |___    |  | | ___] |___ .
+
+*/
+span.cm-hmd-codeblock.cm-keyword {
+  font-weight: bold;
+}
+
+span.code-block-flair {
+  color: var(--mauve) !important;
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "obsidian-typewriter-catppuccin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/main.scss sample-vault/.obsidian/themes/sample-theme/theme.css --no-source-map --style=expanded",
+    "dist": "sass src/main.scss theme.css --no-source-map --style=expanded",
+    "watch": "sass --watch --poll src/main.scss sample-vault/.obsidian/themes/sample-theme/theme.css --no-source-map  ",
+    "cp": "cp ./manifest.json theme.css sample-vault/.obsidian/themes/Catppuccin\\ Typewriter/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylerDurham/obsidian-typewriter-catppuccin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylerDurham/obsidian-typewriter-catppuccin/issues"
+  },
+  "homepage": "https://github.com/TylerDurham/obsidian-typewriter-catppuccin#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  }
+}

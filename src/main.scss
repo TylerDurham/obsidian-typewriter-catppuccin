@@ -1,0 +1,98 @@
+@use 'mocha' as mocha;
+@use 'latte' as latte;
+@use 'sass:color';
+
+.theme-dark {
+
+  // ____ _    ____ ___  ____ _       ____ ____ _    ____ ____ ____ 
+  // | __ |    |  | |__] |__| |       |    |  | |    |  | |__/ [__  
+  // |__] |___ |__| |__] |  | |___    |___ |__| |___ |__| |  \ ___] 
+  //                                                                
+
+  --dark: #262626;
+  --background-primary: #{mocha.$base};
+  --background-secondary: #{mocha.$crust};
+  --red: #{mocha.$red};
+  --yellow: #{mocha.$yellow};
+  --blue: #{mocha.$blue};
+  --sapphire: #{mocha.$sapphire};
+  --green: #{mocha.$green};
+  --pink: #{mocha.$pink};
+  --orange: #{mocha.$peach};
+  --lavender: #{mocha.$lavender};
+  --mauve: #{mocha.$mauve};
+  --text-normal: #{mocha.$text};
+  --text-muted: #{mocha.$overlay0};
+
+  
+  // Code text
+  $hex: #262626;
+  --code-background: #{$hex}; // color.adjust($hex, $lighten: -10%);	// Code background color
+
+} 
+
+.theme-light {
+
+  --dark: #262626;
+  --background-primary: #{latte.$base};
+  --background-secondary: #{latte.$crust};
+  --red: #{latte.$red};
+  --yellow: #{latte.$yellow};
+  --blue: #{latte.$blue};
+  --sapphire: #{latte.$sapphire};
+  --green: #{latte.$green};
+  --pink: #{latte.$pink};
+  --orange: #{latte.$peach};
+  --lavender: #{latte.$lavender};
+  --mauve: #{latte.$pink};
+  --text-normal: #{latte.$text};
+  --text-muted: #{latte.$overlay0};
+
+  --code-background: #{color.adjust(latte.$text, $lightness: -15%)}
+
+}
+
+.theme-light, .theme-dark {
+
+  // ____ ____ ___  ____    ____ ____ _    ____ ____ ____ 
+  // |    |  | |  \ |___    |    |  | |    |  | |__/ [__  
+  // |___ |__| |__/ |___    |___ |__| |___ |__| |  \ ___] 
+  //                                                      
+  
+  // Code colors
+  // TODO: Need to sepperate this out.
+  --code-normal: var(--orange);
+  --code-comment: var(--text-muted);
+  --code-function: var(--yellow);
+  --code-important: var(--pink);
+  --code-keyword: var(--mauve);
+  --code-operator: var(--orange);
+  --code-property: var(--sapphire);
+  --code-punctuation: var(--orange);
+  --code-string: var(--green);
+  --code-tag: var(--green);
+  --code-value: var(--red);
+
+  --italic-color: var(--mauve);
+  --bold-color: var(--mauve);
+  --bold-modifier: 300;
+}
+
+/*
+  ____ ____ ___  ____    _  _ _ ____ ____  
+ |    |  | |  \ |___    |\/| | [__  |     
+ |___ |__| |__/ |___    |  | | ___] |___ .
+                                          
+*/
+
+span.cm-hmd-codeblock.cm-keyword {
+  font-weight: bold;
+}
+span.code-block-flair {
+  color: var(--mauve) !important;
+  font-weight: bold;
+}
+
+// em {
+//   color: var(--red);
+// }

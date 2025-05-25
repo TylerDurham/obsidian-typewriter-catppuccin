@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+node_modules/.bin/sass ./src/main.scss theme2.css --no-source-map --style=expanded
+cp theme.css "sample-vault/.obsidian/themes/Catppuccin Typewriter/"
