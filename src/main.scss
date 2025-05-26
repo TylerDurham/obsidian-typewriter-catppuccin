@@ -29,6 +29,11 @@
   $hex: #262626;
   --code-background: #{$hex}; // color.adjust($hex, $lighten: -10%);	// Code background color
 
+  // blockquote
+  --blockquote-background-color: var(--dark);
+
+  --callout-content-background: var(--dark);
+
 } 
 
 .theme-light {

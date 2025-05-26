@@ -14,6 +14,8 @@
   --text-normal: #cdd6f4;
   --text-muted: #6c7086;
   --code-background: #262626;
+  --blockquote-background-color: var(--dark);
+  --callout-content-background: var(--dark);
 }
 
 .theme-light {

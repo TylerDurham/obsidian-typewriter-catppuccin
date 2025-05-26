@@ -18,30 +18,13 @@ This is normal text.
 
 The **quick** *brown* fox ***jumped*** over the lazy dog.
 
-``` javascript
 
-// This code does nothing...
 
-function test() {
-	document.writeln("This is a test.");
-}
+> My block quote
+> More text
 
-btnSubmit = document.getElementById("a-button");
 
-btnSubmit.onclick = ((evt) => {
-	test();
-})
+> [!Callout] Title
+> Contents
 
-while (true) {
-	test();
-}
-```
-
-``` python
-
-# This code does nothing
-
-def test():
-
-print(f"This is a test!")
-```
+https://docs.obsidian.md/Reference/CSS+variables/Editor/Callout
