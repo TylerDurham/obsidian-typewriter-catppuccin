@@ -3,13 +3,6 @@
 @use 'sass:color';
 
 
-:root {
-  
-}
-
-body {
-
-}
 
 .theme-dark {
 
@@ -37,29 +30,30 @@ body {
 
   
   // Code text
-  --code-background: var(--panel-dark); 
+  // --code-background: var(--panel-dark); 
   
 
   // blockquote
-  --blockquote-background-color: var(--panel-dark);
+  // --blockquote-background-color: var(--panel-dark);
 
   // Callouts
-  --callout-content-background: transparent;
-  --callout-border-color: crust;
-  --callout-border-opacity: 0.95;
-  --callout-border-width: 0px;
-  --callout-title-color: inherit;
-  --callout-title-color: var(--green);
-  --callout-info: var(--orange);
+  // --callout-content-background: transparent;
+  // --callout-border-color: crust;
+  // --callout-border-opacity: 0.95;
+  // --callout-border-width: 0px;
+  // --callout-title-color: inherit;
+  // --callout-title-color: var(--green);
+  // --callout-info: var(--orange);
 
 
 } 
 
-.theme-dark {
-  .callout {
-    background-color: var(--panel-dark);
-  }
-}
+
+// .theme-dark {
+//   .callout {
+//     //  background-color: var(--panel-dark);
+//   }
+// }
 
 .theme-light {
 
@@ -126,3 +120,9 @@ span.code-block-flair {
 // em {
 //   color: var(--red);
 // }
+
+// .callout[data-callout="warning"] {
+//   background-color: var(--yellow-transparent);
+//   color: var(--text);
+// }
+
