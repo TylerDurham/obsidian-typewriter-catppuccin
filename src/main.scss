@@ -2,6 +2,15 @@
 @use 'latte' as latte;
 @use 'sass:color';
 
+
+:root {
+  
+}
+
+body {
+
+}
+
 .theme-dark {
 
   // ____ _    ____ ___  ____ _       ____ ____ _    ____ ____ ____ 
@@ -9,7 +18,9 @@
   // |__] |___ |__| |__] |  | |___    |___ |__| |___ |__| |  \ ___] 
   //                                                                
 
-  --dark: #262626;
+  $panel-dark: #262626;
+
+  --panel-dark: #{$panel-dark};
   --background-primary: #{mocha.$base};
   --background-secondary: #{mocha.$crust};
   --red: #{mocha.$red};
@@ -26,15 +37,29 @@
 
   
   // Code text
-  $hex: #262626;
-  --code-background: #{$hex}; // color.adjust($hex, $lighten: -10%);	// Code background color
+  --code-background: var(--panel-dark); 
+  
 
   // blockquote
-  --blockquote-background-color: var(--dark);
+  --blockquote-background-color: var(--panel-dark);
 
-  --callout-content-background: var(--dark);
+  // Callouts
+  --callout-content-background: transparent;
+  --callout-border-color: crust;
+  --callout-border-opacity: 0.95;
+  --callout-border-width: 0px;
+  --callout-title-color: inherit;
+  --callout-title-color: var(--green);
+  --callout-info: var(--orange);
+
 
 } 
+
+.theme-dark {
+  .callout {
+    background-color: var(--panel-dark);
+  }
+}
 
 .theme-light {
 

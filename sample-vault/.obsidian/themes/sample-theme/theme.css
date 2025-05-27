@@ -1,5 +1,5 @@
 .theme-dark {
-  --dark: #262626;
+  --panel-dark: #262626;
   --background-primary: #1e1e2e;
   --background-secondary: #11111b;
   --red: #f38ba8;
@@ -13,9 +13,19 @@
   --mauve: #cba6f7;
   --text-normal: #cdd6f4;
   --text-muted: #6c7086;
-  --code-background: #262626;
-  --blockquote-background-color: var(--dark);
-  --callout-content-background: var(--dark);
+  --code-background: var(--panel-dark);
+  --blockquote-background-color: var(--panel-dark);
+  --callout-content-background: transparent;
+  --callout-border-color: crust;
+  --callout-border-opacity: 0.95;
+  --callout-border-width: 0px;
+  --callout-title-color: inherit;
+  --callout-title-color: var(--green);
+  --callout-info: var(--orange);
+}
+
+.theme-dark .callout {
+  background-color: var(--panel-dark);
 }
 
 .theme-light {
